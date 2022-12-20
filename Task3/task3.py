@@ -5,8 +5,13 @@
 n = int(input('Enter number: ')) 
 dict = []
 for i in range (1, n + 1):
-    dict.append ([round((1 + 1 / i)**i, 2)])
-        #sum = sum + dict     
-print(dict, end=" ")
-#print(sequence())
+    dict.append ([round((1 + 1 / i)**i, 2)])   
+print(f'Для n = {n}: {dict}', end=" ")
+print()
+
+sum = 0
+for i in range (1, n + 1):
+    dict = round((1 + 1 / i)**i, 2)
+    sum = sum + dict
+print(f'Сумма последовательности чисел: {sum}')
    
